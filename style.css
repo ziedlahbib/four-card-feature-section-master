@@ -15,7 +15,7 @@ body {
   max-height: 700px;
   min-width: 300px;
   min-height: 300px;
-  
+  margin-bottom: 2rem; /* Add margin to make space for footer */
 }
 
 @media (max-width: 600px) {
@@ -94,9 +94,11 @@ body {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 0;
+  margin-left: 10%;
 }
 .content {
   color: hsl(229, 6%, 66%);
+  margin-left: 10%;
 }
 .image {
   height: 10%;
