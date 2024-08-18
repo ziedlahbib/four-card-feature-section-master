@@ -113,7 +113,7 @@ body {
   height: 10%;
   width: 10%;
   align-self: flex-end;
-  margin: 5%;
+  margin: 3%;
 }
 @media (max-width: 600px) {
     .container {
