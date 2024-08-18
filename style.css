@@ -118,7 +118,7 @@ body {
   align-self: flex-end;
     margin-right: 3%;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px),  (max-height: 680px) {
       .footer {
         position: relative; /* Adjust position if needed */
         margin-top: auto; /* Push footer to bottom */
@@ -127,7 +127,7 @@ body {
     .container {
       width: 80vw;
       height: auto; /* Allow height to adjust based on content */
-      max-width: 400px;
+      max-width: 80vw;
       max-height: 100vh;
       overflow: auto;
 
