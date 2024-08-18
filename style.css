@@ -1,25 +1,26 @@
 body {
-  background-color: hsl(0, 0%, 98%);
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container {
-  height: 80vh;
-  width: 80vw;
-  max-width: 1000px;
-  max-height: 700px;
-  min-width: 300px;
-  min-height: 300px;
-  margin-bottom: 2rem; /* Add margin to make space for footer */
+    background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Ensure there's no default margin */
+    align-items: center;
+  }
   
+  .container {
+    flex: 1; /* Allows container to grow and fill available space */
+    width: 80vw;
+    max-width: 1000px;
+    max-height: 700px;
+    min-width: 300px;
+    min-height: 300px;
+  }
   
-}
-
+  .footer {
+    text-align: center;
+    padding: 1rem; /* Add padding for spacing */
+  }
 
 .card-container {    
   width: 100%;
@@ -118,11 +119,17 @@ body {
     margin-right: 3%;
 }
 @media (max-width: 600px) {
+      .footer {
+        position: relative; /* Adjust position if needed */
+        margin-top: auto; /* Push footer to bottom */
+      }
+
     .container {
       width: 80vw;
       height: auto; /* Allow height to adjust based on content */
       max-width: 400px;
-      min-height: 0; /* Remove minimum height */
+      max-height: 100vh;
+      overflow: auto;
 
     }
   
