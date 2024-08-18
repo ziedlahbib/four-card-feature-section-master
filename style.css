@@ -16,6 +16,8 @@ body {
   min-width: 300px;
   min-height: 300px;
   margin-bottom: 2rem; /* Add margin to make space for footer */
+  
+  
 }
 
 
@@ -119,31 +121,58 @@ body {
 @media (max-width: 600px) {
     .container {
       width: 80vw;
-      height: 80vw;
+      height: auto; /* Allow height to adjust based on content */
       max-width: 400px;
-      min-height: 800px;
+      min-height: 0; /* Remove minimum height */
+      box-sizing: border-box; /* Include padding in height calculation */
     }
-    .card-container{
-      flex-direction: column;
+  
+    .paragraph {
+      height: auto; /* Allow height to adjust based on content */
+      margin: 1rem 0; /* Add margin to ensure space around text */
+      padding: 1rem; /* Add padding for better spacing */
+      text-align: center; /* Center text for small screens */
     }
+  
+    .p1 {
+      font-size: 1.5rem; /* Adjust font size for better readability */
+    }
+  
+    .p2 {
+      font-size: 2rem; /* Adjust font size for better readability */
+    }
+  
+    .p3 {
+      font-size: 1.5rem; /* Adjust font size for better readability */
+    }
+  
+    .card-container {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 1rem; /* Add gap between cards */
+    }
+  
     .card4{
         margin-left: 0;
+        margin-top:0
     }
     .card23{
-        margin-bottom: 10%;
+        gap: 5%;
     }
     .card1{
         margin-left: 0;
         margin-bottom: 10%;
-    }
   }
+  .card2,.card3{
+    margin-left: 0;
+    margin-bottom: 10%;
+}
+}
   
   @media (min-width: 1200px) {
     .container {
       width: 1000px;
       height: 700px;
-      display: flex;
-      flex-direction: column;
+
     }
   }
   
