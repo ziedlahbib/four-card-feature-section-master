@@ -30,17 +30,15 @@ body {
   .container {
     width: 1000px;
     height: 700px;
-    display: flex; 
-  flex-direction: column; 
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .card-container {
   width: 100%;
   height: 100%;
-  display: flex; 
-  
-
+  display: flex;
 }
 .paragraph {
   display: flex;
@@ -52,28 +50,63 @@ body {
   color: hsl(229, 6%, 66%);
 }
 .p2 {
-    margin: 0;
+  margin: 0;
   font-size: 3rem;
   font-weight: bold;
 }
-.p3{
-    color: hsl(229, 6%, 66%);
-    font-size: 2.1rem;
-    text-align: center;
+.p3 {
+  color: hsl(229, 6%, 66%);
+  font-size: 2.1rem;
+  text-align: center;
+}
+.card1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-top: hsl(180, 62%, 55%) solid;
+  margin-top: 10%;
+  margin-right: 5%;
+  border-radius: 3%;
+    box-shadow: 
+      4px 4px 8px 0 hsl(229, 6%, 66%); /* Shadow to the bottom */
+
+  
 
 }
-.card1{
-    background-color: #eb1010;
-    width: 100%;
-    height: 100%;
+.card23 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
 }
-.card23{
-    background-color: #10eb97;
-    width: 100%;
-    height: 100%;
+.card2 {
+
+  width: 100%;
+  height: 50%;
+
 }
-.card4{
-    background-color: #6b10eb;
-    width: 100%;
-    height: 100%;
+.card3 {
+  width: 100%;
+  height: 50%;
+}
+.card4 {
+  width: 100%;
+
+}
+.titre{
+    font-size: 2em;
+    font-weight: bold;
+}
+.content{
+    color: hsl(229, 6%, 66%);
+    margin-top: -50px;
+
+}
+.image{
+    height: 10%;
+    width: 10%;
+    align-self: flex-end;
 }
